@@ -1,12 +1,15 @@
 
 import './App.css'
-
+import ToDo from './todo'
 function App() {
   return (
     <>
-      <h1 style={{margin: 0, padding: 0}}>React core concept</h1>
-      <hr style={{marginBottom: "40px"}}/>
-      <Student name="sohag" dep="CSE"></Student>
+      <h1>React core concept</h1>
+      
+      <ToDo task = ' learning react'></ToDo>
+      <ToDo task = ' revision js'></ToDo>
+
+      {/* <Student name="sohag" dep="CSE"></Student>
       <Student name="sagor" dep="Marketing"></Student>
       <Person></Person>
       <Dream></Dream>
@@ -15,11 +18,14 @@ function App() {
       <Device name=" mobil" price="$300"></Device>
       <Phone name=" Redmi" price="$150"></Phone>
       <Phone name=" Samsung" price="$1050"></Phone>
-      <Phone name=" Apple" price="$1250"></Phone>
+      <Phone name=" Apple" price="$1250"></Phone> */}
       
     </>
   )
 }
+
+
+
 
 function Phone({name,price}){
 
