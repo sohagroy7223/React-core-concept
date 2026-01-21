@@ -4,16 +4,32 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1>React core concept</h1>
+      <h1 style={{margin: 0, padding: 0}}>React core concept</h1>
+      <hr style={{marginBottom: "40px"}}/>
       <Student name="sohag" dep="CSE"></Student>
       <Student name="sagor" dep="Marketing"></Student>
       <Person></Person>
       <Dream></Dream>
-      <Device name="laptop" price = "$500"></Device>
-      <Device name="tablet" price="$200"></Device>
-      <Device name="mobil" price="$300"></Device>
+      <Device name=" laptop" price = "$500"></Device>
+      <Device name=" tablet" price="$200"></Device>
+      <Device name=" mobil" price="$300"></Device>
+      <Phone name=" Redmi" price="$150"></Phone>
+      <Phone name=" Samsung" price="$1050"></Phone>
+      <Phone name=" Apple" price="$1250"></Phone>
       
     </>
+  )
+}
+
+function Phone({name,price}){
+
+  return(
+    <div className='student'>
+      <h2>Mobile brand : {name}</h2>
+      <h4>brand:{name} </h4>
+      <p>price: {price} </p> 
+    </div>
+
   )
 }
 
