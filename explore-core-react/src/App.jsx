@@ -5,13 +5,44 @@ function App() {
   return (
     <>
       <h1>React core concept</h1>
-      <Student></Student>
+      <Student name="sohag" dep="CSE"></Student>
+      <Student name="sagor" dep="Marketing"></Student>
       <Person></Person>
       <Dream></Dream>
-      <Device></Device>
+      <Device name="laptop" price = "$500"></Device>
+      <Device name="tablet" price="$200"></Device>
+      <Device name="mobil" price="$300"></Device>
+      
     </>
   )
 }
+
+
+function Student(props){
+  return(
+    <div className='student'>
+      <p>name: {props.name}</p>
+      <p>dept: {props.dep}</p>
+    </div>
+  )
+}
+
+
+
+function Device(prop){
+  // console.log(prop)
+  return(
+    <div style={{
+      border:"2px solid green", 
+      borderRadius: "20px",
+      margin: "10px"
+    }}>
+      <h3>device: {prop.name}</h3>
+      <p>price:{prop.price} </p>
+    </div>
+  )
+}
+
 
 function Person(){
   const age=20
@@ -34,14 +65,6 @@ function Sports(){
   )
 }
 
-function Device(){
-  return(
-    <div>
-      <h3>device:</h3>
-      <p>price: </p>
-    </div>
-  )
-}
 
 
 function Dream(){
@@ -55,13 +78,6 @@ function Dream(){
   )
 }
 
-function Student(){
-  return(
-    <div className='student'>
-      <p>name:</p>
-      <p>dept:</p>
-    </div>
-  )
-}
+
 
 export default App
