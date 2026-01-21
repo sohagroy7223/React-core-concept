@@ -1,15 +1,19 @@
 
 import './App.css'
 import ToDo from './todo'
+import Food from './todo'
 function App() {
   return (
     <>
       <h1>React core concept</h1>
+
+      <Food task ="he is okay" energy={true}></Food>
+      <Food task ="he is hungry" energy={false}></Food>
       
-      <ToDo task = ' learning react' isDone = {true}></ToDo>
+      {/* <ToDo task = ' learning react' isDone = {true}></ToDo>
       <ToDo task = ' revision js' isDone = {true}></ToDo>
       <ToDo task = ' going to home ' isDone = {false}></ToDo>
-      <ToDo task = ' sleeping now' isDone = {false}></ToDo>
+      <ToDo task = ' sleeping now' isDone = {false}></ToDo> */}
       
       {/* <Student name="sohag" dep="CSE"></Student>
       <Student name="sagor" dep="Marketing"></Student>
