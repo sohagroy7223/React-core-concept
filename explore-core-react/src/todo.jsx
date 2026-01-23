@@ -31,6 +31,19 @@
 // conditional rendering option 3: ternary 
 // condition? if true: false 
 
+// export default function ToDo({hay, status, time=0}){
+//     return status?<li> done: {hay} {time}</li>: <li>not done: {hay} </li>
+// }
+
+// conditional rendering option 4: ternary //if condition true so, show it &&.
+
+// export default function ToDo({hay, status, time=0}){
+//     return status && <li>done {hay} {time}</li>
+// }
+
+
+// conditional rendering option 4: ternary //if condition false so, show it ||.
+
 export default function ToDo({hay, status, time=0}){
-    return status?<li> yes {hay} {time}</li>: <li>it {hay} </li>
+    return status || <li>not done {hay} {time}</li>
 }
