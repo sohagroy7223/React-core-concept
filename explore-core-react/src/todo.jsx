@@ -8,14 +8,6 @@
 // } 
 
 
-export default function ToDo({hay , status}){
-    if(status===true){
-        return  (<p>yes {hay}</p>)
-    }
-    else{
-        return (<p>it {hay}</p>)
-    }
-}
 
 // export default function Food({task, energy}){
 //     if(energy===true){
@@ -25,3 +17,15 @@ export default function ToDo({hay , status}){
 //         return (<p>poor man: {task}</p>)
 //     }
 // }
+        
+// export default function ToDo({hay , status, time=0}){
+//     if(status===true){
+//         return  (<p>yes {hay} duration {time}</p>)
+//     }
+//     else{
+//         return (<p>it {hay}</p>)
+//     }
+// }
+
+
+// conditional rendering option 3: ternary 

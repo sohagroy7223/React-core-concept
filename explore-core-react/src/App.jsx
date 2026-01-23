@@ -3,16 +3,19 @@ import './App.css'
 import ToDo from './todo'
 import Food from './todo'
 function App() {
+
+  const time = 50
+
   return (
     <>
       <h1>React core concept</h1>
 
-      <Food task ="he is okay" energy={true}></Food>
-      <Food task ="he is hungry" energy={false}></Food>
+      {/* <Food task ="he is okay" energy={true} ></Food>
+      <Food task ="he is hungry" energy={false}></Food> */}
       
-      <ToDo hay = "we should visit new place" status ={true}></ToDo>
+      <ToDo hay = "we should visit new place" status ={true} time = {time}></ToDo>
       <ToDo hay = "you should to take rest" status ={false}></ToDo>
-      <ToDo hay = "we should read book" status ={true}></ToDo>
+      <ToDo hay = "we should read book" status ={true} time = {time}></ToDo>
       {/* <ToDo task = ' learning react' isDone = {true}></ToDo>
       <ToDo task = ' revision js' isDone = {true}></ToDo>
       <ToDo task = ' going to home ' isDone = {false}></ToDo>
@@ -34,7 +37,7 @@ function App() {
 }
 
 
-
+// option 1******
 
 function Phone({name,price}){
 
