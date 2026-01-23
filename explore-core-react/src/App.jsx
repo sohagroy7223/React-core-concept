@@ -10,6 +10,9 @@ function App() {
       <Food task ="he is okay" energy={true}></Food>
       <Food task ="he is hungry" energy={false}></Food>
       
+      <ToDo hay = "we should visit new place" status ={true}></ToDo>
+      <ToDo hay = "you should to take rest" status ={false}></ToDo>
+      <ToDo hay = "we should read book" status ={true}></ToDo>
       {/* <ToDo task = ' learning react' isDone = {true}></ToDo>
       <ToDo task = ' revision js' isDone = {true}></ToDo>
       <ToDo task = ' going to home ' isDone = {false}></ToDo>
