@@ -29,3 +29,8 @@
 
 
 // conditional rendering option 3: ternary 
+// condition? if true: false 
+
+export default function ToDo({hay, status, time=0}){
+    return status?<li> yes {hay} {time}</li>: <li>it {hay} </li>
+}
