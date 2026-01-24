@@ -3,14 +3,21 @@ import ToDo from "./todo";
 import Food from "./todo";
 import Friend from "./friend";
 import Mobile from "./mobile";
-
+import Library from "./Library";
 function App() {
-  const brands = [
-    { id: 1, name: "Samsung S24 ultra", brand: "samsung", price: "$1000" },
-    { id: 2, name: "Redmi not 13", brand: "Xiaomi", price: "$300" },
-    { id: 3, name: "iphone 16 Pro Max", brand: "Apple", price: "$1100" },
-    { id: 4, name: "walton 15 A", brand: "Walton", price: "$500" },
+  const books = [
+    { id: 1, name: "Physics", price: 250 },
+    { id: 2, name: "Chemistry", price: 300 },
+    { id: 3, name: "Math", price: 280 },
+    { id: 4, name: "Biology", price: 320 },
   ];
+
+  // const brands = [
+  //   { id: 1, name: "Samsung S24 ultra", brand: "samsung", price: "$1000" },
+  //   { id: 2, name: "Redmi not 13", brand: "Xiaomi", price: "$300" },
+  //   { id: 3, name: "iphone 16 Pro Max", brand: "Apple", price: "$1100" },
+  //   { id: 4, name: "walton 15 A", brand: "Walton", price: "$500" },
+  // ];
 
   // const friends = ["Akash", "Samor","Ripon","Allok"]
 
@@ -20,9 +27,11 @@ function App() {
     <>
       <h1>React core concept</h1>
 
-      {brands.map((brand) => (
+      <Library books={books}></Library>
+
+      {/* {brands.map((brand) => (
         <Mobile key={brand.id} mobile={brand}></Mobile>
-      ))}
+      ))} */}
 
       {/* {
         friends.map(friend=><Friend name = {friend}></Friend>)
