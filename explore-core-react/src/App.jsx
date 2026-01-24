@@ -15,7 +15,7 @@ function App() {
       
       <ToDo hay = "we should visit new place" status ={true} time = {time}></ToDo>
       <ToDo hay = "you should to take rest" status ={false}></ToDo>
-      <ToDo hay = "we should read book" status ={true} time = {time}></ToDo>
+      <ToDo hay = "we should read book" status ={true} time =""></ToDo>
       {/* <ToDo task = ' learning react' isDone = {true}></ToDo>
       <ToDo task = ' revision js' isDone = {true}></ToDo>
       <ToDo task = ' going to home ' isDone = {false}></ToDo>
