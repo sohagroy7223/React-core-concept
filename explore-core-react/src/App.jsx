@@ -2,20 +2,29 @@
 import './App.css'
 import ToDo from './todo'
 import Food from './todo'
+import Friend from './friend'
+
+
 function App() {
 
-  const time = 50
+  const friends = ["Akash", "Samor","Ripon","Allok"]
+
+  // const time = 50
 
   return (
     <>
       <h1>React core concept</h1>
 
+      {
+        friends.map(friend=><Friend name = {friend}></Friend>)
+      }
+
       {/* <Food task ="he is okay" energy={true} ></Food>
       <Food task ="he is hungry" energy={false}></Food> */}
       
-      <ToDo hay = "we should visit new place" status ={true} time = {time}></ToDo>
+      {/* <ToDo hay = "we should visit new place" status ={true} time = {time}></ToDo>
       <ToDo hay = "you should to take rest" status ={false}></ToDo>
-      <ToDo hay = "we should read book" status ={true} time =""></ToDo>
+      <ToDo hay = "we should read book" status ={true} time =""></ToDo> */}
       {/* <ToDo task = ' learning react' isDone = {true}></ToDo>
       <ToDo task = ' revision js' isDone = {true}></ToDo>
       <ToDo task = ' going to home ' isDone = {false}></ToDo>
