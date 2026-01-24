@@ -1,7 +1,7 @@
 import "./App.css";
 
 export default function Mobile({ mobile }) {
-  //   console.log(mobile);
+  // console.log(mobile);
   return (
     <div className="brand">
       <h2>brand : {mobile.brand}</h2>

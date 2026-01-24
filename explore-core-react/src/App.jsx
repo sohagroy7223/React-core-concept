@@ -9,7 +9,7 @@ function App() {
     { id: 1, name: "Samsung S24 ultra", brand: "samsung", price: "$1000" },
     { id: 2, name: "Redmi not 13", brand: "Xiaomi", price: "$300" },
     { id: 3, name: "iphone 16 Pro Max", brand: "Apple", price: "$1100" },
-    { id: 1, name: "walton 15 A", brand: "Walton", price: "$500" },
+    { id: 4, name: "walton 15 A", brand: "Walton", price: "$500" },
   ];
 
   // const friends = ["Akash", "Samor","Ripon","Allok"]
@@ -21,7 +21,7 @@ function App() {
       <h1>React core concept</h1>
 
       {brands.map((brand) => (
-        <Mobile mobile={brand}></Mobile>
+        <Mobile key={brand.id} mobile={brand}></Mobile>
       ))}
 
       {/* {
