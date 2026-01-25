@@ -7,7 +7,7 @@ export default function Library({ books }) {
       <p>address: </p>
       <ul>
         {books.map((book) => (
-          <Book book={book}></Book>
+          <Book key={book.id} book={book}></Book>
         ))}
       </ul>
     </div>
